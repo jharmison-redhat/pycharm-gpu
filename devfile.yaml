@@ -4,6 +4,10 @@ metadata:
 components:
   - attributes:
       controller.devfile.io/merge-contribution: true
+      container-overrides:
+        resources:
+          limits:
+            nvidia.com/gpu: 1
     container:
       image: registry.redhat.io/devspaces/udi-rhel8
       memoryLimit: 8G
