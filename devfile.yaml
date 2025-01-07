@@ -1,0 +1,13 @@
+schemaVersion: 2.1.0
+metadata:
+  name: pycharm-gpu
+components:
+  - attributes:
+      controller.devfile.io/merge-contribution: true
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel8
+      memoryLimit: 8G
+      cpuLimit: 4000m
+      mountSources: true
+      sourceMapping: /projects
+    name: python
